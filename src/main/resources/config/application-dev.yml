@@ -25,12 +25,12 @@ eureka:
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://admin:${jhipster.registry.password}@localhost:8761/eureka/
+      defaultZone: http://admin:${jhipster.registry.password}@ec2-13-233-91-132.ap-south-1.compute.amazonaws.com:8761/eureka/
 
 management:
   zipkin: # Use the "zipkin" Maven profile to have the Spring Cloud Zipkin dependencies
     tracing:
-      endpoint: http://localhost:9411/api/v2/spans
+      endpoint: http://ec2-13-233-91-132.ap-south-1.compute.amazonaws.com:9411/api/v2/spans
   tracing:
     sampling:
       probability: 1.0 # report 100% of traces
@@ -55,7 +55,7 @@ spring:
       # it can be set to any label, branch or commit of the configuration source Git repository
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:postgresql://localhost:5432/backendone
+    url: jdbc:postgresql://ec2-13-233-91-132.ap-south-1.compute.amazonaws.com:5432/backendone
     username: backendone
     password:
     hikari:
@@ -88,7 +88,7 @@ jhipster:
   # CORS is disabled by default on microservices, as you should access them through a gateway.
   # If you want to enable it, please uncomment the configuration below.
   cors:
-    allowed-origins: 'http://localhost:3000,http://localhost:4200,http://localhost:4200'
+    allowed-origins: 'http://ec2-13-233-91-132.ap-south-1.compute.amazonaws.com:3000,http://ec2-13-233-91-132.ap-south-1.compute.amazonaws.com:4200,http://ec2-13-233-91-132.ap-south-1.compute.amazonaws.com:4200'
     allowed-methods: '*'
     allowed-headers: '*'
     exposed-headers: 'Authorization,Link,X-Total-Count'
@@ -116,7 +116,7 @@ jhipster:
 # ===================================================================
 
 oidc:
-  url: http://localhost:9080/realms/jhipster
+  url: http://ec2-13-233-91-132.ap-south-1.compute.amazonaws.com:9080/realms/jhipster
 
 # ===================================================================
 

@@ -53,7 +53,7 @@ The below cmd will install the required dependencies and run the prototype in lo
 
 Run the prototype locally: `./mvnw`
 
-Open [http://localhost:9020/management/health/readiness](http://localhost:9020/management/health/readiness) to view it in your browser.
+Open [http://ec2-13-233-91-132.ap-south-1.compute.amazonaws.com:9020/management/health/readiness](http://ec2-13-233-91-132.ap-south-1.compute.amazonaws.com:9020/management/health/readiness) to view it in your browser.
 
 You could see the below response in your browser:
 

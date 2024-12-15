@@ -49,7 +49,7 @@ public class BackendoneApp {
 
                 ----------------------------------------------------------
                 \tApplication '{}' is running! Access URLs:
-                \tLocal: \t\t{}://localhost:{}{}
+                \tLocal: \t\t{}://ec2-13-233-91-132.ap-south-1.compute.amazonaws.com:{}{}
                 \tExternal: \t{}://{}:{}{}
                 \tProfile(s): \t{}
                 ----------------------------------------------------------""",

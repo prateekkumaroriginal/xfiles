@@ -197,8 +197,8 @@ class AuthorizationHeaderUtilTest {
                 .clientId("web-app")
                 .clientSecret("secret")
                 .redirectUri("/login/oauth2/code/oidc")
-                .authorizationUri("http://localhost:8080/auth/realms/master/protocol/openid-connect/auth")
-                .tokenUri("https://localhost:8080/auth/realms/master/protocol/openid-connect/token")
+                .authorizationUri("http://ec2-13-233-91-132.ap-south-1.compute.amazonaws.com:8080/auth/realms/master/protocol/openid-connect/auth")
+                .tokenUri("https://ec2-13-233-91-132.ap-south-1.compute.amazonaws.com:8080/auth/realms/master/protocol/openid-connect/token")
                 .build(),
             "sub",
             token,
