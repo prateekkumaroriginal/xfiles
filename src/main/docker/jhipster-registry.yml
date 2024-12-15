@@ -28,7 +28,7 @@ services:
     ports:
       - 127.0.0.1:8761:8761
     healthcheck:
-      test: ['CMD', 'curl', '-f', 'http://localhost:8761/management/health']
+      test: ['CMD', 'curl', '-f', 'http://ec2-13-233-91-132.ap-south-1.compute.amazonaws.com:8761/management/health']
       interval: 5s
       timeout: 5s
       retries: 20
